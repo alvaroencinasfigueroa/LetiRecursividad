@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ posiciones(int)
+comment1.params=numero\ pos
+comment1.target=int\ posiciones(java.lang.String,\ int)
+numComments=2

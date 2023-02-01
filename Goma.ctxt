@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Goma()
+comment1.params=sab
+comment1.target=void\ setSabor(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getSabor()
+comment3.params=
+comment3.target=void\ darPrecio()
+numComments=4

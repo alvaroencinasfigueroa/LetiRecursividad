@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ principal()
+comment1.params=B
+comment1.target=void\ mostrarArreglo(int[])
+comment2.params=B\ i
+comment2.target=void\ mostrarArreglo(int[],\ int)
+comment3.params=B
+comment3.target=void\ burbuja(int[])
+comment4.params=B\ li\ ls\ i
+comment4.target=void\ burbuja(int[],\ int,\ int,\ int)
+numComments=5

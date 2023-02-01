@@ -1,0 +1,4 @@
+//Dado un tablero de ajedrez, ubicar 8 reinas sin que ninguna de ellas se ataque, es decir corra peligro. 
+public class Ejercicio46{
+    
+} 

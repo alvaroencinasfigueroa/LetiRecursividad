@@ -1,0 +1,28 @@
+import java.util.*;
+public class Ejercicio34{
+    public ArrayList<Integer> subsecuencia(int vector []){
+        ArrayList<Integer> lista = new ArrayList();
+        return subsecuencia(vector, lista, 0);
+    }
+    private ArrayList<Integer> subsecuencia(int vector[], ArrayList<Integer> res, int i){
+        if(i == vector.length){
+            return res;
+        }else{
+            ArrayList<Integer> actual = new ArrayList<>();
+            actual.add(vector[i]);
+            comparar(vector, i+1, actual);
+            if(actual.size() > res.size()){
+                res = actual;
+            }
+            return subsecuencia(vector, res, i+1);
+        }
+    }
+    private void comparar(int vector[], int i, ArrayList<Integer> actual){
+        if(i < vector.length){
+            if(vector[i] < vector[i-1]){
+                actual.add(vector[i]);
+                comparar(vector, i+1, actual);
+            }
+        }
+    }
+}

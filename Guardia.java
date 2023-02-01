@@ -1,0 +1,5 @@
+
+
+class Guardia extends Persona{
+    
+}

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=boolean\ perfectoIterativo(int)
+comment1.params=n
+comment1.target=boolean\ perfectoRecursivo(int)
+comment2.params=n
+comment2.target=int\ sumaDivisores(int)
+comment3.params=n\ pd
+comment3.target=int\ sumaDivisores(int,\ int)
+numComments=4

@@ -1,0 +1,91 @@
+
+//Ejercicios: 5,6,7,8,9,10,11,12
+public class Secuencia{//Ejercicio 5
+    int ar []={100,70,40,10,50,80,90,20,30,60};
+    int nn;
+    public int sumarSecuencia(int n){//Ejercicio 6
+        nn = n;
+        return sumarSecuencia(ar,0);
+    }
+    private int sumarSecuencia(int ar [],int pos){
+        if(pos<=nn){
+            int num=ar[pos];
+            //if(num==1)
+            return sumarSecuencia(ar,pos+1)+num;
+            //else
+             //return sumarSecuencia(ar,pos+1);
+        }else{
+            return 0;
+        }
+        
+    }
+    public int encontrarMinimo(int n){//Ejercicio 7
+        return encontrarMinimo(ar,0,0);
+    }
+    private int encontrarMinimo(int ar[],int pos,int aux){
+        if (pos<ar.length){
+            if(pos<pos+1){
+                aux=ar[pos];
+                ar[pos]=ar[pos+1];
+                ar[pos+1]=aux;
+            }
+             return encontrarMinimo(ar,pos+1,aux);
+        }else
+             return 0;
+    }
+    public void mostrarSec(/*int ar []*/){//Ejercicio 8
+         
+        System.out.println("Secuencia Desordenada");
+        mostrarOrdenado(ar);
+        ordenador(ar);
+        System.out.println("Secuencia Ordenada");
+        mostrarOrdenado(ar);
+    }
+    public void mostrarOrdenado(int ar []){
+        mostrarOrdenado(ar,0);
+    }
+    private void mostrarOrdenado(int ar [],int pos){
+        if(pos<ar.length){
+            System.out.println(ar[pos]+"  ");
+            mostrarOrdenado(ar,pos+1);
+        }else
+         System.out.println();
+    }
+    public void ordenador(int ar []){
+        ordenador(ar,0,ar.length-1,0);
+    }
+    private void ordenador(int ar [],int li,int ls,int pos){
+        if(li<ls){
+            if(pos<ls){
+                if(ar[pos]>ar[pos+1]){
+                    int aux=ar[pos];
+                    ar[pos]=ar[pos+1];
+                    ar[pos+1]=aux;
+                }
+                ordenador(ar,li,ls,pos+1);
+            }else
+            ordenador(ar,li,ls-1,0);
+        }
+    }
+    public boolean buscarSec(int ar [],int x){//Ejercicio 9
+        return buscarSec(ar,x,0,ar.length-1);
+    }
+    private boolean buscarSec(int ar [],int pos,int li,int ls){
+        boolean res;
+        if(li<ls){
+            int medio=(li+ls/2);
+            if(pos==ar[medio]){
+             res=true;
+            }else if(pos>ar[medio]){
+             res=buscarSec(ar,pos,medio+1,ls);
+            }else{
+             res=buscarSec(ar,pos,li,medio-1);
+            }
+        }else{
+          return false;
+        }
+         return res;
+    }
+     
+}
+

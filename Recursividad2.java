@@ -1,0 +1,118 @@
+
+
+public class Recursividad2{
+    public int factorial(int n){
+        if(n==0)
+        return 1;
+        else
+        return n*factorial(n-1);
+    }
+    public int sumaM3(int n){
+        if(n==0)
+        return 1;
+        else if(n==1)
+        return 3;
+        else
+        return sumaM3(n-1)+3*n;
+    }
+    public int potencia(int n,int m){
+        if(m==0)
+        return 1;
+        else if(m==1)
+        return n;
+             else
+             return potencia(n,m-1)*n;
+    }
+    public int serie(int n){
+        if(n==1)
+        return 5;
+        else if(n==2)
+        return 16;
+        else
+        return serie(n-1)*2+1; //creo que mal
+    }
+    public int fibonacci(int n){
+        if(n==1)
+        return 0;
+        else if(n==2)
+        return 1;
+             else
+             return fibonacci(n-1)+fibonacci(n-2);
+    }
+    public boolean Esprimo(int n){
+       return false;
+    }
+    public int cantDivisores(int n){
+        return cantDivisores(n,1);
+    }
+    private int cantDivisores(int n,int pd){
+        if(pd<=n){
+            if(n%pd==0)
+            return 1+cantDivisores(n,pd+1);
+            else
+            return cantDivisores(n,pd+1);
+        }else
+        return 0;
+    }
+    public int cal1(int n){
+        if(n==1)
+        return 1;
+        else
+        return cal1(n-1)+(3*n-2);//mal    
+    }
+    public int palitos(int n,int m){
+        if(m==1)
+        return 3;
+        else
+        return palitos(n,m-1)+2*n;//mal
+    }
+    //MOL DE HILBERT
+    public long Hilbert(long n){
+        if(n==1)
+        return 3;
+        else if(n%2==0)
+        return Hilbert(n-1)*3+4;
+        else
+        return Hilbert(n-1)*3;
+    }
+    public long Kotch(long n){
+        long res;
+        if (n==1){
+            res=1;
+        }
+        else{
+            res=Kotch(n-1)*4+1;
+        }
+        return res;
+    }
+    public int sumatoria(int n){
+        int dig;
+        if(n<10)
+        return n;
+        else
+         dig = n%10;
+        return dig+sumatoria(n/10);
+    }
+    public long contarDig(long n){
+        long cant;
+        if(n<10){
+          cant=1;
+        }
+        else{
+          cant=1+contarDig(n/10);
+        }
+        return cant;
+    }
+    
+    /*public int cantDigitos(int n){
+        return cantDigitos(n,1);
+    }*/
+    /*private int cantDigitos(int n, int cd){
+        if(cd<n){
+        }
+        else 
+        return 0;
+         
+    }*/
+}
+   

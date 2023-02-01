@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=ma
+comment0.target=int[][]\ ordenarMatriz(int[][])
+comment1.params=ma\ i\ j\ cond\ f\ c
+comment1.target=int[][]\ ordenarMatriz(int[][],\ int,\ int,\ int,\ int,\ int)
+comment2.params=ma
+comment2.target=int\ sumarMatriz(int[][])
+comment3.params=fila\ col\ orden\ mat
+comment3.target=int\ sumarMatriz(int,\ int,\ int,\ int[][])
+numComments=4

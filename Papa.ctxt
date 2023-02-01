@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=pic
+comment0.target=Papa(java.lang.String)
+comment1.params=
+comment1.target=void\ darPrecio()
+comment1.text=public\ Papa(int\ pre,String\ fv,String\ nom,double\ pezo,String\ pic){\r\n\ \ \ \ \ \ \ \ super(pre,fv,nom,pezo);\r\n\ \ \ \ \ \ \ \ picante\=pic;\r\n}
+comment2.params=pi
+comment2.target=void\ setPPicante(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getPicante()
+numComments=4

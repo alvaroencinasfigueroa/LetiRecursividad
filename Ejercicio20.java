@@ -1,0 +1,22 @@
+
+public class Ejercicio20{
+    public boolean palindromo(String cad){
+        return palindromo(0, cad.length()-1, cad);
+    }
+
+    private boolean palindromo(int i, int j, String cad){
+        boolean res;
+        if(i >= j){
+            res = true;
+        }else{
+            char primero = cad.charAt(i);
+            char ultimo = cad.charAt(j);
+            if(primero == ultimo){
+                res = palindromo(i+1, j-1, cad);
+            }else{
+                res = false;
+            }
+        }
+        return res;
+    }
+}

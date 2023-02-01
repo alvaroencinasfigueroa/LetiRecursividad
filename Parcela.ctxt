@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nombre\ cant
+comment0.target=Parcela(java.lang.String,\ int)
+comment1.params=
+comment1.target=int\ getCantidad()
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+numComments=3

@@ -1,0 +1,49 @@
+import java.util.*;
+public class Ejercicio45{
+    public ArrayList[] contarOcurrencia(String texto){
+        ArrayList[] res = new ArrayList[2];
+        ArrayList<String> palabras = new ArrayList<>();
+        ArrayList<Integer> frecuencia = new ArrayList<>();
+        res[0] = palabras;
+        res[1] = frecuencia;
+        contarOcurrencias(texto, 0, "", palabras, frecuencia);
+        return res;
+    }
+
+    private void contarOcurrencias(String texto, int pos, String palabraActual, ArrayList<String> palabras, ArrayList<Integer> frecuencia){
+        if(pos == texto.length()){
+            agregarPalabras(palabraActual, palabras, frecuencia);
+        }else{
+            if(encontramosLetra(texto.charAt(pos))){
+                palabraActual = palabraActual + texto.charAt(pos);
+                contarOcurrencias(texto, pos+1, palabraActual, palabras, frecuencia);
+            }else{
+                agregarPalabras(palabraActual, palabras, frecuencia);
+                contarOcurrencias(texto, pos+1, palabraActual, palabras, frecuencia);
+            }
+        }     
+    }
+
+    private void agregarPalabras(String pactual, ArrayList<String> palabras, ArrayList<Integer> frecuencia){
+        if(pactual.isEmpty() == false){
+            if(palabras.contains(pactual)){
+                int indice = palabras.indexOf(pactual);
+                int fre = frecuencia.get(indice);
+                frecuencia.set(indice, fre+1);
+            }else{
+                palabras.add(pactual);
+                frecuencia.add(1);
+            }
+        }  
+    }
+    
+    public boolean encontramosLetra(char letra){
+        boolean res;
+        if(letra >= 'a' && letra <= 'z' || letra >= 'A' && letra <= 'Z'){
+            res = true;
+        }else{
+            res = false;
+        }
+        return res;
+    }
+}

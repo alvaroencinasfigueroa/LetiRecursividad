@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=vec
+comment0.target=int[]\ buscaPerfectos(int[])
+comment1.params=vec\ pos\ encontrado\ noEncontrado
+comment1.target=int[]\ buscaPerfectos(int[],\ int,\ int,\ int)
+numComments=2

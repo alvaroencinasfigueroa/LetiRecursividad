@@ -1,0 +1,38 @@
+public class Ejercicio87{
+    public boolean esCurioso(int n){
+        return esCurioso(n,1);
+    }
+
+    private boolean esCurioso(int n, int parcial){
+        boolean res = true;
+        if(n<10){
+            if(n == factorial(n))
+                res = true;
+            else
+                res = false;
+        }else{
+            parcial = n%10;
+            int s = factorial(parcial);
+            int sumaT = s;
+            if(n == sumaT){
+                res = esCurioso(n/10,parcial);
+                res = true;
+            }else{
+                res = esCurioso(n/10,parcial);
+                res = false;
+            }
+        }
+        return res;
+    }
+
+    private int factorial(int n){
+        int res = 0;
+        if(n==0){
+            res = 1;
+        }else{
+            res = factorial(n-1)*n;
+        }
+        return res;
+    }
+}
+

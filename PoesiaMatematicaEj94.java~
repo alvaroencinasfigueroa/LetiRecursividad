@@ -1,0 +1,34 @@
+
+public class PoesiaMatematicaEj94{
+    public boolean esPoesiaMat(String poesia,String nro){
+        return esPoesiaMat(poesia,0,nro,0,"");
+    }
+
+    private boolean esPoesiaMat(String poesia,int pos,String nro,int i,String palabra){//94 mal
+
+        if(i<nro.length() && pos<poesia.length()){
+            char c=poesia.charAt(pos);
+            if(esDelimitador(c)){
+                if(palabra.length()<0){
+                    int dig=Integer.parseInt(nro);//casting
+                    if(palabra.length()==dig){
+                        return esPoesiaMat(poesia,pos+1,nro,i+1,"");
+                        //boolean true;
+                    }else{
+                        return esPoesiaMat(poesia,pos+1,nro,i+1,"");
+                        //bolean false;
+                    }
+                }else 
+                if(palabra.length()==0)
+                    return esPoesiaMat(poesia,pos+1,nro,i,palabra);
+
+            }else
+                return esPoesiaMat(poesia,pos+1,nro,i,palabra+c);
+        }
+        return false;
+    }
+
+    public boolean esDelimitador(char q){
+        return q==' '|| q =='.'||q ==','||q ==';'||q ==':';
+    }
+}

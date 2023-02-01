@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ divisores(int)
+comment1.params=n\ pd\ lista\ pos
+comment1.target=void\ divisores(int,\ int,\ java.util.ArrayList,\ int)
+numComments=2

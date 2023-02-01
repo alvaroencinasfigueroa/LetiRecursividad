@@ -1,0 +1,11 @@
+public class Fibonacci{
+    public long fib(int n){
+        long res;
+        if(n == 1){
+            res = 0;
+        }else{
+            res = fib(n-1) + fib(n-2);
+        }
+        return res;
+    }
+}

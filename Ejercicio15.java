@@ -1,0 +1,42 @@
+public class Ejercicio15{
+    public boolean mult11(int n){
+        boolean res;
+        if(promedio(n)%11==0){
+            res = true;
+        }else{
+            res = false;
+        }
+        return res;
+    }
+    private int promedio(int n){
+        return promedio(n,true);
+    }
+    private int promedio(int n, boolean par){
+        int res;
+        if(n == 0){
+            res = 0;
+        }else{
+            int dig = n%10;
+            if(par){
+                res = dig + promedio(n/10,false);
+            }else{
+                res = -dig + promedio(n/10,true);
+            }
+        }
+        return res;
+    }
+    /*public int promedio(int n){
+        return promedio(n,0);
+    }
+    private int promedio(int n, int pos){
+        int res ;
+        pos = n/10;
+        if((pos%2)==0){
+            res = promedio(n/10,pos+1)+n%10;
+        }else{
+            res = promedio(n/10,pos+1)-n%10;
+        }
+        return res;
+    }*/
+}
+

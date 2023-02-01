@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ sumaDivisores(int)
+comment1.params=n\ pd
+comment1.target=int\ sumaDivisores(int,\ int)
+numComments=2

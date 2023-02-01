@@ -1,0 +1,14 @@
+public class Ejercicio108{
+    public int Hilbert(int n){
+        int res=0;
+        if(n==1){
+            res=3;
+        }else{
+            if(n%2==0)
+                res=Hilbert(n-1)*3+4;
+            else
+                res=Hilbert(n-1)*3;
+        }
+        return res;
+    }
+}

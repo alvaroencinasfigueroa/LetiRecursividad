@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=lab\ xR\ yR\ xQ\ yQ
+comment0.target=Laberinto(int[][],\ int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=boolean\ buscar()
+comment2.params=x\ y
+comment2.target=boolean\ buscar(int,\ int)
+comment3.params=x\ y
+comment3.target=boolean\ valido(int,\ int)
+comment4.params=x\ y
+comment4.target=boolean\ estaQueso(int,\ int)
+numComments=5

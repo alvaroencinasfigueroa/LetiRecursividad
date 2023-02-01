@@ -1,0 +1,59 @@
+public class Ejercicio27{
+    public int devolverNsimo(int vec[], int n){
+        return devolverNsimo(vec, 1, 0);
+    }
+
+    private int devolverNsimo(int vec[], int n, int pos){
+        int res = 0;
+        if(vec.length == 1){
+            n = vec[pos];
+            res = n;
+        }else{
+            if(vec.length > 1){
+                if(estaOrdenado(vec)){
+                    res = devolverNsimo(vec, n, pos+1);
+                }
+                else{
+                    burbuja(vec);
+                    res = devolverNsimo(vec, n, pos+1);
+                }
+            }
+        }
+        return res;
+    }
+
+    private boolean estaOrdenado(int []v){
+        return estaOrdenado(v,0);    
+    }
+
+    private boolean estaOrdenado(int v[],int pos){
+        boolean res = true;
+        if(pos<v.length-1){
+            if(v[pos]<v[pos+1]){
+                res = estaOrdenado(v,pos+1);
+            }else{
+                res = false;
+            }
+        }
+        return res;
+    }
+
+    private void burbuja(int B[]){
+        burbuja(B, 0, B.length-1, 0);
+    }
+
+    private void burbuja(int B[], int li, int ls, int i){
+        if(li<ls){
+            if(i<ls){//4,1,3,7      1,3,4,7        1 2
+                if(B[i] > B[i+1]){
+                    int aux = B[i];
+                    B[i] = B[i+1];//ls-1
+                    B[i+1] = aux;
+                }
+                burbuja(B,li,ls,i+1);
+            }else
+                burbuja(B,li,ls-1,0);
+
+        }
+    }
+}	

@@ -1,0 +1,17 @@
+
+public class Ejercicio99{
+    public String parsimoniosa(int n){
+        String res;
+        if(n==1){
+            res = " **--** ";
+        }
+        else{
+            if(n%2 == 0){
+                res = " ++--" + parsimoniosa(n-1) + " --++ ";
+            }else{
+                res = " **-- " + parsimoniosa(n-1) + " --** ";
+            }
+        }
+        return res;
+    }
+}

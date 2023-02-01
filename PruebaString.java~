@@ -1,0 +1,13 @@
+
+public class PruebaString{
+    public static void main(String []a){
+    String sr="gatismo";
+    String se="manchis";
+    System.out.println(sr.charAt(2));
+    System.out.println(sr.concat(se));
+    System.out.println(sr.compareTo(se));
+    System.out.println(sr.isEmpty());
+    System.out.println(sr.replace('g','m'));
+    System.out.println(sr.toCharArray());
+}
+}

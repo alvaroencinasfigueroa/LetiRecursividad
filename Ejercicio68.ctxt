@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ numeroPoligonal(int)
+comment0.text=public\ int\ numeroPoligonal(int\ n){\r\n\ \ \ \ int\ res\ \=\ 0;\r\n\ \ \ \ if(n\ \=\=\ 1)\r\n\ \ \ \ res\ \=\ 1;\r\n\ \ \ \ else\ if(n\ \=\=\ 2)\r\n\ \ \ \ res\ \=\ 5;\r\n\ \ \ \ else{\r\n\ \ \ \ if(n%2\ \=\=\ 0)\r\n\ \ \ \ res\ \=\ numeroPoligonal(n-1)*2+12;\r\n\ \ \ \ else\r\n\ \ \ \ res\ \=\ numeroPoligonal(n-1)*2+11;\r\n\ \ \ \ }\r\n\ \ \ \ return\ res;\r\n}
+numComments=1

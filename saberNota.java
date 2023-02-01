@@ -1,0 +1,17 @@
+public class saberNota{
+    //falta pero está bien
+    public static void main (String []arg){
+        double notaCertamenTotal;
+        double notaFinal;
+        double notaLab = 65;
+        double c1=45;
+        double c2=55;
+        
+        
+    }
+    public double notaCerFinal(double c1, double c2, double c3){
+        double notaCertamenFinal = 0;
+        notaCertamenFinal = (c1+c2+c3)/3;
+        return notaCertamenFinal;
+    }
+}

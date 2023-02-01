@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=boolean\ esIncremental(int)
+comment1.params=n\ ultimoDig
+comment1.target=boolean\ esIncremental(int,\ int)
+numComments=2

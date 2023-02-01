@@ -1,0 +1,29 @@
+
+public class Ejercicio42{
+    public int patronExacto(String texto,String patron){
+        return patronExacto(texto,0,patron,0);
+    }
+
+    private int patronExacto(String texto,int pos,String patron,int pos2){//42
+        int res=0;
+        if(pos<texto.length()){
+            if(pos2==patron.length()){
+                res = 1+patronExacto(texto,pos+1,patron,0);
+            } else{
+                char a=texto.charAt(pos);
+                char b=patron.charAt(pos2);
+                if(a==b){
+                    res = patronExacto(texto,pos+1,patron,pos2+1);
+                }else{
+                    res = patronExacto(texto,pos+1,patron,pos2);
+                }
+            }
+        } else{
+            if(pos2==patron.length())
+                res=1;
+            else
+                res=0;
+        }
+        return res;
+    }
+}

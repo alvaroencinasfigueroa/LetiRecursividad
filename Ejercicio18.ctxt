@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ promedio(int)
+comment1.params=n\ par
+comment1.target=int\ promedio(int,\ boolean)
+numComments=2

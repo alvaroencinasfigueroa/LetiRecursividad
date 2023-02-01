@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=A\ x
+comment0.target=boolean\ busBin(int[],\ int)
+comment1.params=A\ x\ li\ ls
+comment1.target=boolean\ busBin(int[],\ int,\ int,\ int)
+numComments=2

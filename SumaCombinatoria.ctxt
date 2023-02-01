@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=a
+comment0.target=void\ main(java.lang.String[])
+comment1.params=numero\ numeros\ suma
+comment1.target=void\ combinacionesSuma(int,\ java.util.ArrayList,\ int)
+comment1.text=public\ \ void\ combinacionesSuma(int\ n){\r\n\ \ \ \ \ \ \ \ return\ combinacionesSuma(n,numeros,0);\r\n}
+numComments=2

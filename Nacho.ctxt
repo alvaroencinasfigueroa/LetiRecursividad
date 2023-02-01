@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=dM
+comment0.target=Nacho(java.lang.String)
+comment1.params=dM
+comment1.target=void\ setDeMaiz(java.lang.String)
+comment1.text=public\ Nacho(int\ pr,\ String\ fve,String\ nob,double\ pe,String\ dM){\r\n\ \ \ \ \ \ \ \ super(pr,fve,nob,pe,dM);\r\n\ \ \ \ \ \ \ \ deMaiz\=dM;\r\n}
+comment2.params=
+comment2.target=java.lang.String\ getDeMaiz()
+comment3.params=
+comment3.target=void\ darPrecio()
+numComments=4

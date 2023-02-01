@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=asd
+comment0.target=void\ main(java.lang.String[])
+comment1.params=vec
+comment1.target=int\ llenarVector(int[])
+comment1.text=private\ int\ convertir(int\ ab[],\ int\ pos){\r\n\ \ \ \ int\ res\ \=\ 0;\r\n\ \ \ \ if(pos\=\=ab.length)\r\n\ \ \ \ res\ \=\ ab[0];\r\n\ \ \ \ else{\ \r\n\ \ \ \ res\ \=\ ab[(ab.length-1)-pos]\ *\ Math.pow(10,pos)+convertir(pos+1);\r\n\ \ \ \ }\r\n\ \ \ \ return\ res;\ \ \ \ \r\n}//{1,2,3,4}\ \=\ 1234
+comment2.params=vec\ pos
+comment2.target=int\ llenarVector(int[],\ int)
+comment3.params=vec
+comment3.target=int\ sumaVector(int[])
+comment4.params=vec\ pos
+comment4.target=int\ sumarVector(int[],\ int)
+comment5.params=vec
+comment5.target=int\ sumaVectorIterativo(int[])
+numComments=6

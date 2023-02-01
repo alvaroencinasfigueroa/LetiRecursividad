@@ -1,0 +1,33 @@
+public class Ejercicio68{
+    /*public int numeroPoligonal(int n){
+    int res = 0;
+    if(n == 1)
+    res = 1;
+    else if(n == 2)
+    res = 5;
+    else{
+    if(n%2 == 0)
+    res = numeroPoligonal(n-1)*2+12;
+    else
+    res = numeroPoligonal(n-1)*2+11;
+    }
+    return res;
+    }*/
+    //68.  Dentro el mundo matematico hay muchas relaciones numerales interesantes una de ellas son los numeros
+    //poligonales. Se pueden formar pentagonos de distintos niveles de crecimiento, juntando circulos como muestra en la
+    //Figura 1. Dada esta relacion se pide escribir el (los) proceso(s) necesarios RECURSIVOS para encontrar
+    //la cantidad de circulos necesarios para tener un pentagono de nivel n.
+    // 1  2   3  4    5   6   7    8--> nivel
+    // 1  5  12  22  35  51  70   92
+
+
+    public int numeroPoligonal(int n){
+        int res = 0;
+        if(n == 1){
+            res = 1;
+        }else{
+            res = numeroPoligonal(n-1)+(3*n-1)-1;
+        }
+        return res;  
+    }
+}

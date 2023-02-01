@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=texto\ x
+comment0.target=int\ contarCaracter(java.lang.String,\ char)
+comment1.params=texto\ pos\ x
+comment1.target=int\ contarCaracter(java.lang.String,\ int,\ char)
+comment10.params=ch
+comment10.target=boolean\ esConsonante(char)
+comment2.params=texto
+comment2.target=java.lang.String\ invCadena(java.lang.String)
+comment3.params=texto\ pos\ texto2
+comment3.target=java.lang.String\ invCadena(java.lang.String,\ int,\ java.lang.String)
+comment4.params=texto
+comment4.target=int\ contarVocales(java.lang.String)
+comment5.params=texto\ pos
+comment5.target=int\ contarVocales(java.lang.String,\ int)
+comment6.params=c
+comment6.target=boolean\ esVocal(char)
+comment7.params=texto\ pos
+comment7.target=java.lang.String\ darVuelta(java.lang.String,\ int)
+comment8.params=escrito
+comment8.target=int\ contarConsonante(java.lang.String)
+comment9.params=escrito\ pos
+comment9.target=int\ contarConsonante(java.lang.String,\ int)
+numComments=11

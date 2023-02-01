@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ esEquilibrado(int)
+comment1.params=n\ li
+comment1.target=void\ esEquilibrado(int,\ java.util.ArrayList)
+comment2.params=n
+comment2.target=int\ contFactoresPrimos(int)
+comment3.params=n\ posFactor
+comment3.target=int\ contFactoresPrimos(int,\ int)
+comment4.params=n
+comment4.target=boolean\ esPrimo(int)
+comment5.params=n
+comment5.target=int\ cantDivi(int)
+comment6.params=n\ pd
+comment6.target=int\ cantDivi(int,\ int)
+comment7.params=n
+comment7.target=java.util.ArrayList\ divisores(int)
+comment8.params=n\ pd\ lista\ pos
+comment8.target=java.util.ArrayList\ divisores(int,\ int,\ java.util.ArrayList,\ int)
+numComments=9

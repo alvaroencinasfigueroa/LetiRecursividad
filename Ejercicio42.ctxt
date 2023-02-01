@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=texto\ patron
+comment0.target=int\ patronExacto(java.lang.String,\ java.lang.String)
+comment1.params=texto\ pos\ patron\ pos2
+comment1.target=int\ patronExacto(java.lang.String,\ int,\ java.lang.String,\ int)
+numComments=2

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ sumaPrimos(int)
+comment0.text=public\ int\ sumarSecuencia(int\ n){\r\n\ \ \ \ return\ sumarSecuencia(sec,0);\r\n\ \ \ \ }\r\n\r\n\ \ \ \ private\ int\ sumarSecuencia(int\ sec\ [],int\ pos){\r\n\ \ \ \ int\ res\=0;\r\n\ \ \ \ if(pos<sec.length){\r\n\ \ \ \ int\ pri\ \=\ sec[pos];\r\n\ \ \ \ if(esPrimo(pri)){\r\n\ \ \ \ //int\ np\=sec[pos];\r\n\ \ \ \ res\=\ pri+sumarSecuencia(sec,pos+1);\r\n\ \ \ \ }else{\r\n\ \ \ \ res\=sumarSecuencia(sec,pos+1);\r\n\ \ \ \ }\r\n\ \ \ \ }else{\r\n\ \ \ \ res\ \=\ 0;\r\n\ \ \ \ }\r\n\ \ \ \ return\ res;\r\n}
+comment1.params=n\ pos
+comment1.target=int\ sumaPrimos(int,\ int)
+comment2.params=n
+comment2.target=boolean\ esPrimo(int)
+comment3.params=n
+comment3.target=int\ cantDiv(int)
+comment4.params=n\ pd
+comment4.target=int\ cantDiv(int,\ int)
+numComments=5

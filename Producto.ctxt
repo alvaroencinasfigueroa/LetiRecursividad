@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ darPrecio()
+comment1.params=pre
+comment1.target=void\ setPrecio(int)
+comment2.params=
+comment2.target=int\ getPrecio()
+comment3.params=fv
+comment3.target=void\ setFechaVencimiento(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getFechaVencimiento()
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment6.params=nom
+comment6.target=void\ setNombre(java.lang.String)
+comment7.params=pezo
+comment7.target=void\ setPeso(double)
+comment8.params=
+comment8.target=double\ getPeso()
+numComments=9

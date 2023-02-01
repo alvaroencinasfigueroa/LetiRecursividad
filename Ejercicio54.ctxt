@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=c
+comment0.target=Ejercicio54(java.lang.String)
+comment1.params=cad
+comment1.target=java.lang.String\ buscarCadena(java.lang.String)
+comment2.params=c\ posCinta\ resP
+comment2.target=int\ buscarLetraAdelante(char,\ int,\ int)
+comment3.params=c\ posCinta\ resP
+comment3.target=int\ buscarLetraAtras(char,\ int,\ int)
+numComments=4

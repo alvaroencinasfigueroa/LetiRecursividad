@@ -1,0 +1,15 @@
+public class ConvertirVector{
+    public int convertir(int ab[]){
+        return convertir(ab,0);
+    }
+
+    private int convertir(int ab[], int pos){
+        int res = 0;
+        if(pos==ab.length)
+            res = pos;
+        else
+            res = convertir(ab, pos+1);
+        return res;    
+    }
+}
+

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=pa\ parce\ m\ n\ sumaDeParcelas
+comment0.target=Vinedo(Parcela,\ int[][],\ int,\ int,\ int)
+comment1.params=
+comment1.target=int\ encontrarPos()
+comment2.params=x\ y
+comment2.target=void\ encontrarPos(int,\ int)
+numComments=3

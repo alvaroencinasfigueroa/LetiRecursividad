@@ -1,0 +1,30 @@
+
+public class Ejercicio14{
+    public boolean sonPares(int n){
+        boolean res = false;
+        if(n < 10){
+            if(n % 2 == 0)
+                res = true;
+            else
+                res = false;
+        }else{
+            if(n % 2 == 0){
+                res = sonPares(n/10);
+            }
+            else{
+                res = false;
+            }
+        }
+        return res;
+    }
+
+    private int contarDig(int n){
+        int res=0;
+        if(n<10){
+            res=1;
+        }else{
+            res=1+contarDig(n/10);
+        }
+        return res;
+    }
+}

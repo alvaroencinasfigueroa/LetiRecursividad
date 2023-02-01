@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=poesia\ nro
+comment0.target=boolean\ esPoesiaMat(java.lang.String,\ java.lang.String)
+comment1.params=poesia\ pos\ nro\ i\ palabra
+comment1.target=boolean\ esPoesiaMat(java.lang.String,\ int,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=q
+comment2.target=boolean\ esDelimitador(char)
+numComments=3

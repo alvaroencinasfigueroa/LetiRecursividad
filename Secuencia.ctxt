@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ sumarSecuencia(int)
+comment1.params=ar\ pos
+comment1.target=int\ sumarSecuencia(int[],\ int)
+comment10.params=ar\ pos\ li\ ls
+comment10.target=boolean\ buscarSec(int[],\ int,\ int,\ int)
+comment2.params=n
+comment2.target=int\ encontrarMinimo(int)
+comment3.params=ar\ pos\ aux
+comment3.target=int\ encontrarMinimo(int[],\ int,\ int)
+comment4.params=
+comment4.target=void\ mostrarSec()
+comment5.params=ar
+comment5.target=void\ mostrarOrdenado(int[])
+comment6.params=ar\ pos
+comment6.target=void\ mostrarOrdenado(int[],\ int)
+comment7.params=ar
+comment7.target=void\ ordenador(int[])
+comment8.params=ar\ li\ ls\ pos
+comment8.target=void\ ordenador(int[],\ int,\ int,\ int)
+comment9.params=ar\ x
+comment9.target=boolean\ buscarSec(int[],\ int)
+numComments=11

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=java.util.ArrayList\ PascalT(int)
+comment1.params=nivel\ n\ res
+comment1.target=void\ PascalT(int,\ int,\ java.util.ArrayList)
+comment2.params=ultsublista\ nuevasublista\ i\ lim
+comment2.target=void\ generarFila(java.util.ArrayList,\ java.util.ArrayList,\ int,\ int)
+comment3.params=tam\ i\ lista
+comment3.target=void\ crearListaCapacidad(int,\ int,\ java.util.ArrayList)
+numComments=4

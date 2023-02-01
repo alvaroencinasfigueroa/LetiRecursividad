@@ -1,0 +1,15 @@
+public class Ejercicio66{
+    public int hexagonosCrecimiento(int n){
+        int res = 0;
+        if (n==1){
+            res = 6;
+        }else{
+            if(n%2==0)
+                res = hexagonosCrecimiento(n-1)*5;
+            else
+                res = hexagonosCrecimiento(n-1)*2+12;
+        }
+        return res;
+    }
+}
+
